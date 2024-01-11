@@ -1,6 +1,7 @@
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
+
 public class GameFrame extends JFrame implements MouseListener {
     public GameFrame()
      {
@@ -18,13 +19,7 @@ public class GameFrame extends JFrame implements MouseListener {
           this.setCursor(c);
      }
      @Override
-    public void mouseClicked(MouseEvent e) {
-        Image cursorI = Toolkit.getDefaultToolkit().getImage("hmrwithpow.png");
-        Point hotSpot = new Point(cursorI.getWidth(null) / 2, cursorI.getHeight(null) / 2);
-        Cursor ci = Toolkit.getDefaultToolkit().createCustomCursor(cursorI, hotSpot, "customCursor");
-        this.setCursor(ci);
-     }
-
+    public void mouseClicked(MouseEvent e) {}
 
      @Override
      public void mouseEntered(MouseEvent e) {}
