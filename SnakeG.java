@@ -19,7 +19,7 @@ public class SnakeG {
         playButton.setBackground(Color.GREEN);
         playButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                new GameFrame();
+                new Instructions();
                 f.dispose();
             }
         });
